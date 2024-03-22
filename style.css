@@ -1,0 +1,53 @@
+body {
+  padding: 20px;
+}
+
+.slider-container {
+  max-width: 1000px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+.slider-container .slider {
+  display: flex;
+  margin-inline: auto;
+  width: 1000px;
+  display: flex;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.slider-container .slider .slide {
+  display: flex;
+  background-color: #C3B1E1;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+}
+.slider-container .slider .slide h1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.slider-container .next-prev-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-container .next-prev-buttons .prev-next-btn {
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  border: none;
+}
+.slider-container .next-prev-buttons .prev-next-btn img {
+  border-radius: 50%;
+  width: 50px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
