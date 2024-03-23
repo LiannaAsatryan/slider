@@ -1,21 +1,32 @@
 body {
   padding: 20px;
+  max-height: 100vh;
+  padding-block: 150px;
 }
 
 .slider-container {
-  max-width: 1000px;
+  max-width: 1100px;
+  display: flex;
   margin-inline: auto;
   overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  align-items: center;
 
   .slider {
     display: flex;
     margin-inline: auto;
-    width: 1000px;
+    max-width: calc(900px + 2*20px);
+    overflow: hidden;
     display: flex;
     margin-inline: auto;
     margin-bottom: 20px;
     justify-content: space-between;
     gap: 20px;
+
 
 
     .slide {
@@ -29,31 +40,52 @@ body {
       }
 
       display: flex;
-      background-color: #C3B1E1;
+      background-color: #EABEC3;
+      //background-color: #C3B1E1;
       border-radius: 10px;
-      width: 300px;
+      min-width: 300px;
       height: 300px;
       justify-content: center;
     }
   }
 
-  .next-prev-buttons {
-    display: flex;
-    justify-content: space-between;
+  .prev-next-btn {
+    background-color: transparent;
+    border: none;
+    min-width: 50px;
+    padding: 0;
+    padding-block: 0;
+    height: 50px;
 
-    .prev-next-btn {
+    img {
       height: auto;
-      border-radius: 50%;
       cursor: pointer;
+      margin-block: 0;
       display: block;
-      border: none;
-
-      img {
-        border-radius: 50%;
-        width: 50px;
-        object-fit: cover;
-        overflow: hidden;
-      }
+      border-radius: 50%;
+      width: 50px;
+      object-fit: cover;
+      overflow: hidden;
     }
+  }
+}
+
+.pagination {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #333;
   }
 }
