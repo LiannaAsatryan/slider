@@ -106,6 +106,53 @@ slides.draggable({
 });
 
 
+// Mouse events
+
+/*let isDragging = false;
+let startPosition;
+let currentInd = 0;
+let currentTranslate;
+let prevTranslate = 0;
+let currentPos = 0;
+slider.on('mousedown', e => {
+    isDragging = true;
+    startPosition = e.clientX;
+    slides.css('cursor', 'grabbing');
+});
+
+slider.on('mousemove', e => {
+    if (isDragging) {
+        currentPos = e.clientX;
+        currentTranslate = prevTranslate + currentPos - startPosition;
+        if (currentTranslate > 0) {
+            currentTranslate = 0; // Prevent sliding to the left beyond the start
+        } else if (currentTranslate < -(slidesWidth * (slides.length - 2) + gap*(slides.length - 1) - sliderWidth)) {
+            currentTranslate = -(slidesWidth * (slides.length - 2) + gap*(slides.length - 1) - sliderWidth); // Prevent sliding to the right beyond the end
+        }
+        slides.css('transform', `translateX(${currentTranslate}px)`);
+    }
+});
+
+slider.on('mouseup', () => {
+
+    if (!isDragging) return;
+    isDragging = false;
+    const dragDistance = currentTranslate - prevTranslate;
+    if (dragDistance < -100 && index < slides.length - 1) {
+        index++;
+    } else if (dragDistance > 100 && index > 0) {
+        index--;
+    }
+    goToSlide(index);
+
+    prevTranslate = currentTranslate;
+
+    slides.css('cursor', 'auto');
+});*/
+
+
+
+
 
 
 
